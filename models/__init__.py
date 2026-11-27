@@ -1,9 +1,9 @@
 """Model constructors for the seven-variable SRU data."""
-from .gpvae import BackboneGPVAE
-from .mrnn.mit_qbalanced import MRNNMITQBalanced
-from .saits.qbalanced import SAITSQBalanced
-from .traiformer import TRAIFormer
-from .transformer.qbalanced import TransformerQBalanced
+from .GPVAE import BackboneGPVAE
+from .MRNN.mit_qbalanced import MRNNMITQBalanced
+from .SAITS.qbalanced import SAITSQBalanced
+from .TRAIFormer import TRAIFormer
+from .Transformer.qbalanced import TransformerQBalanced
 
 
 def build_sru_model(name, device="cpu"):
