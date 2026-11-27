@@ -9,7 +9,7 @@ Pass one of these names to `models.build_sru_model` to create a model with its S
 | Model | How it estimates missing values |
 | --- | --- |
 | M-RNN | Runs recurrent networks forward and backward through the sequence, then combines their estimates with information from other variables. |
-| GP-VAE | Uses a variational autoencoder with a Gaussian process prior over latent trajectories. The SRU encoder uses a 15-step convolutional window. |
+| GP-VAE | Uses a variational autoencoder with a Gaussian process prior over latent trajectories. |
 | Transformer | Uses a self-attention encoder to estimate missing values from the observed sequence. |
 | SAITS | Combines estimates from two diagonally masked self-attention blocks. |
 | TRAIFormer | Applies temporal attention within each variable, then relation-aware attention across variables. A learned gate combines the two representations. |
